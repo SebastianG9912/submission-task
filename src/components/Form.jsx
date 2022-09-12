@@ -1,26 +1,18 @@
 import React, {useState} from "react"
 
-
-//const allNews = ["sports", "technology", "international", "local", "politics"]
-
-
-
 const Form = () =>{
-    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
     const [allNews, setAllNews] = useState([])
 
     const handleNews = (event, news) =>{
         const newNews = [...allNews]
         const found = newNews.includes(news)
-        console.log(found)
-        console.log(allNews)
         if(found){
             const index = newNews.indexOf(news)
             newNews.splice(index, 1);
         }else{
             newNews.push(news)
         }
-        console.log(allNews)
         setAllNews(newNews)
     }
 
@@ -31,8 +23,19 @@ const Form = () =>{
 
         <form>
             <h4>Please enter your email below</h4>
-            <input type="text" placeholder="Email"/>
-            <button type="button">Send</button>
+            <div id="emailZone">
+                <input id="emailText" type="text" placeholder="Email"/>
+                <button type="button" onClick={() =>{
+                    setEmail(document.getElementById("emailText").value)
+                    document.getElementById("emailText").value = ""
+                    document.getElementById("emailZone").hidden = true
+                    document.getElementById("emailConfirmation").style.display = "block"
+                    }}>Send
+                </button>
+            </div>
+            <div id="emailConfirmation" style={{display: "none"}}>
+                    We have sent a mail to the address: {email}
+            </div>
             <div>
                 <button type="button" onClick={event =>{handleNews(event, "sports")}}>Sports</button>
                 <button type="button" onClick={event =>{handleNews(event, "technology")}}>Technology</button>
