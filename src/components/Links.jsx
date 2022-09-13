@@ -5,7 +5,6 @@ const Links = () => {
     return (
         <nav>
             <Link to="/">Home</Link>
-            <Link to="/About">About us</Link>
             <Link to="/Register">Register for interest</Link>
             <Link to="/Newsfeed">See the newsfeed</Link>  
         </nav>
