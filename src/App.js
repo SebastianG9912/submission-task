@@ -27,7 +27,7 @@ function App() {
           }}
         >
           <Link class="btn-secondary" to="/Register">
-            Register for interest
+            Register for newsletter
           </Link>
           <Link class="btn-secondary" to="/Newsfeed">
             See the newsfeed

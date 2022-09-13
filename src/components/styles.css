@@ -1,3 +1,7 @@
+html{
+    overflow-x: hidden;
+}
+
 body{
     background-color: rgb(230, 230, 230);
 }
@@ -77,4 +81,74 @@ width: min-content;
 .inputBtn input{
     border-right: 0;
     border-top-right-radius: 0;
-    border-bottom-right-radius: 0;}
+    border-bottom-right-radius: 0;
+}
+
+.newsForm{
+    padding-top: 20px;
+    margin: auto; 
+    max-width: 80%; 
+    display:flex; 
+    justify-content: center;
+}
+
+.newsForm button{
+    margin:0 10px 0 10px;
+    padding: 5px 10px 5px 10px;
+    font-size: x-large;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(200, 200, 200);
+    transition: all 0.2s ease-in-out;
+}
+
+.newsForm button:hover{
+    opacity: 75%;
+    cursor:pointer;
+}
+
+.newsCards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.newsCards > *{
+    border: 1px solid black;
+    border-radius: 10px; 
+    width: 30%;
+    height: fit-content;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.newsCards h3{
+    text-align: center;
+}
+
+.color-sports{
+    background-color: rgb(255, 37, 37)!important;
+}
+
+.color-technology{
+    background-color: rgb(55, 168, 255)!important;
+}
+
+.color-international{
+    background-color: rgb(231, 231, 85)!important;
+}
+
+.color-local{
+    background-color: rgb(54, 230, 54)!important;
+}
+
+.color-politics{
+    background-color: rgb(183, 106, 255)!important;
+}
+
+@media (max-width: 800px) {
+    .newsCards, .links, .newsForm{
+        flex-wrap: wrap;
+    }
+}
