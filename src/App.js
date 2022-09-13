@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Links />
-      <div style={{ margin: "10vh" }}>
+      <div class="card-inset">
         <h1 style={{ textAlign: "center" }}>Welcome!</h1>
         <div style={{ margin: "auto", maxWidth: "500px" }}>
           <p style={{ lineHeight: "1.5em" }}>
@@ -21,9 +21,10 @@ function App() {
 
         <div
           style={{
-            width: "fit-content",
+            width: "100%",
             display: "flex",
             margin: "auto",
+            justifyContent: "space-evenly",
           }}
         >
           <Link class="btn-secondary" to="/Register">

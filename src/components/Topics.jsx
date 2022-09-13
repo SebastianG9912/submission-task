@@ -17,11 +17,7 @@ const Topics = () =>{
 
     return(
     <div>
-        <div style={
-            {width:"100%", 
-            minHeight:"80px", 
-            backgroundColor:"rgb(180, 180, 180)"}
-        }>
+        <div class="card-inset">
             <form class="newsForm">
                 <button type="button" onClick={event =>{handleNews(event, "Sports")}} class="color-sports">Sports</button>
                 <button type="button" onClick={event =>{handleNews(event, "Technology")}} class="color-technology">Technology</button>

@@ -4,7 +4,7 @@ const Form = () =>{
     const [email, setEmail] = useState("")
 
     return(
-    <div style={{display:"flex"}}>
+    <div class="card-inset">
         <form style={{margin:"auto"}}>
             <h3>Please enter your email below if you are interested in recieving more news</h3>
             <div id="emailZone" class="inputBtn" style={{margin:"auto"}}>

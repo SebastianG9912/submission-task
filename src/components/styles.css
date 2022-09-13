@@ -4,12 +4,25 @@ html{
 
 body{
     background-color: rgb(230, 230, 230);
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
     background-color: rgb(131, 189, 216);
     width: 100%;
     min-height: 45px;
+}
+
+.card-inset{
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 0 20px 10px 20px;
+    min-width: 300px;
+    border-style: inset;
+    border-width: 2px;
 }
 
 .links {
@@ -128,23 +141,23 @@ width: min-content;
 }
 
 .color-sports{
-    background-color: rgb(255, 37, 37)!important;
+    background-color: rgb(255, 110, 110)!important;
 }
 
 .color-technology{
-    background-color: rgb(55, 168, 255)!important;
+    background-color: rgb(97, 187, 255)!important;
 }
 
 .color-international{
-    background-color: rgb(231, 231, 85)!important;
+    background-color: rgb(255, 255, 142)!important;
 }
 
 .color-local{
-    background-color: rgb(54, 230, 54)!important;
+    background-color: rgb(144, 255, 144)!important;
 }
 
 .color-politics{
-    background-color: rgb(183, 106, 255)!important;
+    background-color: rgb(205, 151, 255)!important;
 }
 
 @media (max-width: 800px) {
