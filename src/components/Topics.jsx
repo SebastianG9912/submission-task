@@ -17,13 +17,13 @@ const Topics = () =>{
 
     return(
     <div>
-        <div class="card-inset">
-            <form class="newsForm">
-                <button type="button" onClick={event =>{handleNews(event, "Sports")}} class="color-sports">Sports</button>
-                <button type="button" onClick={event =>{handleNews(event, "Technology")}} class="color-technology">Technology</button>
-                <button type="button" onClick={event =>{handleNews(event, "International")}} class="color-international">International</button>
-                <button type="button" onClick={event =>{handleNews(event, "Local")}} class="color-local">Local</button>
-                <button type="button" onClick={event =>{handleNews(event, "Politics")}} class="color-politics">Politics</button>
+        <div className="card-inset">
+            <form className="newsForm">
+                <button type="button" onClick={event =>{handleNews(event, "Sports")}} className="color-sports">Sports</button>
+                <button type="button" onClick={event =>{handleNews(event, "Technology")}} className="color-technology">Technology</button>
+                <button type="button" onClick={event =>{handleNews(event, "International")}} className="color-international">International</button>
+                <button type="button" onClick={event =>{handleNews(event, "Local")}} className="color-local">Local</button>
+                <button type="button" onClick={event =>{handleNews(event, "Politics")}} className="color-politics">Politics</button>
             </form>
         </div>
 
@@ -33,7 +33,7 @@ const Topics = () =>{
 
 const ShowCaseNews = ({chosenNews}) =>{
     return(
-        <div class="newsCards">
+        <div className="newsCards">
             {chosenNews.map(item =>{
                 let className = "color-"
                 let content = ""
@@ -69,7 +69,7 @@ const ShowCaseNews = ({chosenNews}) =>{
                 }
                 
                 return(
-                    <div class={className}>
+                    <div className={className}>
                         <h3>{item}</h3>
                         <p>
                             {content}

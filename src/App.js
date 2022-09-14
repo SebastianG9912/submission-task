@@ -1,4 +1,3 @@
-import "./App.css";
 import "./components/styles.css";
 import { Link } from "react-router-dom";
 import { Links } from "./components";
@@ -7,7 +6,7 @@ function App() {
   return (
     <div>
       <Links />
-      <div class="card-inset">
+      <div className="card-inset">
         <h1 style={{ textAlign: "center" }}>Welcome!</h1>
         <div style={{ margin: "auto", maxWidth: "500px" }}>
           <p style={{ lineHeight: "1.5em" }}>
@@ -27,10 +26,10 @@ function App() {
             justifyContent: "space-evenly",
           }}
         >
-          <Link class="btn-secondary" to="/Register">
+          <Link className="btn-secondary" to="/Register">
             Register for newsletter
           </Link>
-          <Link class="btn-secondary" to="/Newsfeed">
+          <Link className="btn-secondary" to="/Newsfeed">
             See the newsfeed
           </Link>
         </div>
